@@ -1,5 +1,9 @@
-// @ts-check
+// astro.config.mjs
 import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind"; // ★この行があるか？
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  integrations: [
+    tailwind() // ★この行があるか？
+  ]
+});

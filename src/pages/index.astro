@@ -5,7 +5,120 @@ import Layout from '../layouts/Layout.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<!DOCTYPE html>
+<html lang="ja" class="m-0 p-0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<Layout>
-	<Welcome />
-</Layout>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // 'roboto' という名前でフォントを定義
+                        roboto: ['Roboto', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>WCPC</title>
+</head>
+<body class="m-0 p-0 bg-white text-black font-['Noto_Sans',_sans-serif]">
+    <header class="bg-white/80 text-black font-['D-DIN-PRO',_sans-serif] font-normal fixed top-0 left-0 w-full z-[1] backdrop-blur-[10px]">
+        <div class="flex flex-row justify-between items-center p-[20px] text-[1.5rem] max-[850px]:flex-col max-[850px]:gap-0">
+            <div class="flex flex-row justify-between items-center gap-[10px]">
+                <div class="flex flex-row items-center cursor-pointer">
+                    <img class="w-[50px] h-[50px] rounded-[8px]" src="images/wcpc-logo.svg" alt="WCPC">
+                    <div class="font-roboto border-r-[3px] border-[#dedede] p-[10px]">WCPC</div>
+                </div>
+                <div class="cursor-pointer">私たちについて</div>
+                <div class="cursor-pointer">コンテスト</div>
+                <div class="cursor-pointer">よくある質問</div>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-[15px]">
+                <div class="cursor-pointer">お問い合わせ</div>
+                <a href="https://discord.com/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
+                    <div class="h-[70px] bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
+                        <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
+                        <div> 新歓サーバーへ</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="w-full text-center my-[100px] mx-0 max-[850px]:mt-[150px]">
+            <h1 class="font-roboto font-bold text-[5rem]">Hello World!</h1>
+            <h2 class="font-roboto font-bold text-[3rem]"><span class="text-[#ff6302]">W</span>CPC</h2>
+            <h2 class="font-roboto font-bold text-[3rem]"><span class="text-[#ff6302]">W</span>akayama University Competitive Programming Circle</h2>
+            
+            <img class="w-full m-auto" src="images/wcpc-logo-photo_hu_40ab4ffdfc9b24e1.webp" alt="">
+            <a href="https://discord.com/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
+                <div class="h-[70px] bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
+                    <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
+                    <div> 新歓サーバーへ</div>
+                </div>
+            </a>
+        </div>
+        <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
+            <h2 class="font-roboto font-bold text-[3rem]">News</h2>
+            <a href="https://discord.com/" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302]">
+                <div class="h-[70px] bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
+                    <div>お知らせ一覧ページへ</div>
+                </div>
+            </a>
+        </section>
+        <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
+            <h2 class="font-roboto font-bold text-[3rem]">About</h2>
+            <p class="font-['Noto_Sans',_sans-serif] text-[1.7rem]">和歌山大学公認の競技プログラミングサークルです。2024年12月から活動しています。現在は10名のメンバーで構成されています。
+                AtCoder様が定期的に開催するプログラミングコンテストのほか、オンサイトコンテストへの参加など、活動は多岐にわたります。
+            </p>
+            <a href="https://discord.com/" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302]">
+                <div class="h-[70px] bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
+                    <div>メンバー紹介ページへ</div>
+                </div>
+            </a>
+            <a href="https://atcoder.jp/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
+                <div class="h-[70px] bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
+                    <div>AtCoder様へ</div>
+                </div>
+            </a>
+        </section>
+        <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
+            <h2 class="font-roboto font-bold text-[3rem]">Contest</h2>
+            <a href="./" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302]">
+                <div class="h-[70px] bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
+                    <div>コンテスト結果一覧ページへ</div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer class="bg-[#ff6302] text-white">
+        <div class="h-fit flex flex-col items-center p-[15px]">
+            <div class="font-['D-DIN-PRO',_sans-serif] text-[1.8rem] p-[30px] h-fit">
+                <h2 class="font-roboto font-bold text-[3rem]">WCPC</h2>
+            </div>
+            <div class="mx-auto my-0 h-fit flex flex-row justify-between gap-[20px] flex-wrap">
+                <a href="https://X.com"><i class="fa-brands fa-twitter text-white text-[2.5rem] p-[10px]"></i></a>
+                <a href="https://github.com"><i class="fa-brands fa-github text-white text-[2.5rem] p-[10px]"></i></a>
+                <a href="https://youtube.com"><i class="fa-brands fa-youtube text-white text-[2.5rem] p-[10px]"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-discord text-white text-[2.5rem] p-[10px]"></i></a>
+            </div>
+            <div class="w-full h-[50px]"></div>
+            <p class="font-['Noto_Sans',_sans-serif] text-[1.1rem]">Copyright © 2025 WCPC</p>
+        </div>
+    </footer>
+</body>
+</html>
