@@ -24,9 +24,9 @@ import { Icon } from 'astro-icon/components';
     <title>WCPC</title>
 </head>
 <body class="m-0 p-0 bg-white text-black font-['Noto_Sans',_sans-serif]">
-    <header class="bg-white/80 text-black font-['D-DIN-PRO',_sans-serif] font-normal fixed top-0 left-0 w-full z-[1] backdrop-blur-[10px] ">
-        <div class="flex flex-row justify-between items-center flex-wrap p-[20px] text-[1.5rem] max-[850px]:flex-col max-[850px]:gap-0">
-            <div class="flex flex-row justify-between items-center gap-[10px]">
+    <header class="bg-white/80 text-black font-['D-DIN-PRO',_sans-serif] font-normal sticky top-0 w-full z-[1] backdrop-blur-[10px] ">
+        <div class="flex flex-row justify-between items-center flex-wrap p-[20px] text-base md:text-[1.5rem] max-[850px]:flex-col max-[850px]:gap-4">
+            <div class="flex flex-row flex-wrap justify-center items-center gap-[10px]">
                 <div class="flex flex-row items-center cursor-pointer">
                     <a href="/"><img class="w-[50px] h-[50px] rounded-[8px]" src="images/wcpc-logo.svg" alt="WCPC"></a>
                     <div class="font-roboto border-r-[3px] border-[#dedede] p-[10px]">WCPC</div>
@@ -35,37 +35,31 @@ import { Icon } from 'astro-icon/components';
                 <div class="cursor-pointer">コンテスト</div>
                 <div class="cursor-pointer">よくある質問</div>
             </div>
-            <div class="flex flex-row justify-between items-center gap-[15px]">
+            <div class="flex flex-row flex-wrap justify-center items-center gap-[15px]">
                 <div class="cursor-pointer">お問い合わせ</div>
-                <a href="https://discord.com/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
-                    <div class="h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
-                        <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
-                        <div> 新歓サーバーへ</div>
-                    </div>
+                <a href="https://discord.com/" class="group text-white no-underline font-medium hover:text-[#ff6302] h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center hover:bg-[#fcdecc]">
+                    <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
+                    <div> 新歓サーバーへ</div>
                 </a>
             </div>
         </div>
     </header>
     <main>
-        <div class="w-full text-center my-[100px] mx-0 max-[850px]:mt-[150px]">
+        <div class="w-full text-center my-[50px] mx-0">
             <h1 class="font-roboto font-bold text-[4rem]">Hello World!</h1>
             <h2 class="font-roboto font-bold text-[2rem]"><span class="text-[#ff6302]">W</span>CPC</h2>
             <h2 class="font-roboto font-bold text-[2rem]"><span class="text-[#ff6302]">W</span>akayama University Competitive Programming Circle</h2>
             
             <img class="w-full m-auto" src="images/wcpc-logo-photo_hu_40ab4ffdfc9b24e1.webp" alt="">
-            <a href="https://discord.com/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
-                <div class="h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
-                    <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
-                    <div> 新歓サーバーへ</div>
-                </div>
+            <a href="https://discord.com/" class="group text-white no-underline font-medium hover:text-[#ff6302] h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center hover:bg-[#fcdecc]">
+                <i class="fa-brands fa-discord text-inherit group-hover:text-[#ff6302]" ></i>
+                <div> 新歓サーバーへ</div>
             </a>
         </div>
         <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
             <h2 class="font-roboto font-bold text-[3rem]">News</h2>
-            <a href="https://discord.com/" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302]">
-                <div class="h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
-                    <div>お知らせ一覧ページへ</div>
-                </div>
+            <a href="https://discord.com/" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302] h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] hover:bg-[#fcdecc]">
+                <div>お知らせ一覧ページへ</div>
             </a>
         </section>
         <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
@@ -73,23 +67,17 @@ import { Icon } from 'astro-icon/components';
             <p class="font-['Noto_Sans',_sans-serif] text-[1.7rem]">和歌山大学公認の競技プログラミングサークルです。2024年12月から活動しています。現在は10名のメンバーで構成されています。
                 AtCoder様が定期的に開催するプログラミングコンテストのほか、オンサイトコンテストへの参加など、活動は多岐にわたります。
             </p>
-            <a href="https://discord.com/" class="group text-[#ff6302] no-underline w-auto font-medium hover:text-[#ff6302]">
-                <div class="h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
-                    <div>メンバー紹介ページへ</div>
-                </div>
+            <a href="https://discord.com/" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302] h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] hover:bg-[#fcdecc]">
+                <div>メンバー紹介ページへ</div>
             </a>
-            <a href="https://discord.com/" class="group text-white no-underline inline-flex w-auto items-center font-medium hover:text-[#ff6302]">
-				<div class="h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center group-hover:bg-[#fcdecc]">
-					<div>AtCoder様へ</div>
-				</div>
-			</a>
+            <a href="https://discord.com/" class="group text-white no-underline font-medium hover:text-[#ff6302] h-fit bg-[#ff6302] text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex justify-center flex-row gap-[10px] border-[3px] border-[#ff6302] w-fit h-[30px] min-w-[120px] text-center hover:bg-[#fcdecc]">
+                <div>AtCoder様へ</div>
+            </a>
         </section>
         <section class="m-[15px] p-10 rounded-[10px] bg-[#fff8f3] min-h-[200px]">
             <h2 class="font-roboto font-bold text-[3rem]">Contest</h2>
-            <a href="./" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302]">
-                <div class="h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] group-hover:bg-[#fcdecc]">
-                    <div>コンテスト結果一覧ページへ</div>
-                </div>
+            <a href="./" class="group text-[#ff6302] no-underline font-medium hover:text-[#ff6302] h-fit bg-white text-[1.5rem] p-[10px] rounded-[10px] cursor-pointer items-center inline-flex flex-row gap-[10px] h-[30px] w-fit min-w-[100px] border-[3px] border-[#ff6302] hover:bg-[#fcdecc]">
+                <div>コンテスト結果一覧ページへ</div>
             </a>
         </section>
     </main>
